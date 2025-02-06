@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детектор</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://flashphoner.com/downloads/builds/flashphoner_client/wcs_api-2.0/current/flashphoner.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li data-target="archive">Архив детекций</li>
+            <li data-target="video-stream">Видео поток</li>
+            <li data-target="settings">Параметры</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div id="archive" class="settings-window">
+            <h2>Архив детекций</h2>
+            <button id="delete-button" class="delete-button">Удалить все</button>
+            <div id="archive-grid" class="image-grid"></div>
+        </div>
+        <div id="video-stream" class="settings-window">
+            <h2>Видео поток</h2>
+        </div>
+        <div id="settings" class="settings-window">
+            <h2>Параметры</h2>
+            <ul id="settings-list" class="settings-list"></ul>
+            <div class="button-container">
+                <button id="add-button" class="add-button">Добавить параметр</button>
+                <button id="save-button" class="save-button">Сохранить</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-popup" id="image-popup">
+        <img id="popup-image" src="" alt="">
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
