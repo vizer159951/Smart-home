@@ -21,7 +21,7 @@ void setup() {
 
   IPAddress ip;
   WiFi.mode(WIFI_STA);
-  WiFi.begin("RT-GPON-6AC8", "D7g3d6j764");
+  WiFi.begin("SSID", "PASS");
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(F("."));
